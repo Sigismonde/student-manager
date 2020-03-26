@@ -1,5 +1,7 @@
 package loose.oose.fis.lab.student.manager.model;
 
+import java.util.Objects;
+
 public class Student {
     private String firstName;
     private String lastName;
@@ -36,5 +38,21 @@ public class Student {
 
     public int hashCode() {
         return Objects.hash(super.hashCode(), firstName, lastName, age, meanGrade);
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getMeanGrade() {
+        return meanGrade;
     }
 }
